@@ -26,8 +26,8 @@ public class DragNDrop {
 //        $("#column-b").shouldHave(Condition.text("B"));
 //        actions().clickAndHold(column1).moveToElement(column2).release().build().perform();
 
-        actions().dragAndDrop(column1, column2).build().perform();
-//        $("#column-a").dragAndDropTo("#column-b");
+//        actions().dragAndDrop(column1, column2).build().perform();
+        $("#column-a").dragAndDropTo("#column-b");
         $("#column-a").shouldHave(Condition.text("B"));
         $("#column-b").shouldHave(Condition.text("A"));
 
